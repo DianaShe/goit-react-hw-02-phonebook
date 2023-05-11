@@ -10,6 +10,18 @@ export class App extends Component {
     filter: '',
   };
 
+  componentDidUpdate = (prevProps, prevState) => {
+    if (prevState.contacts !== this.state.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts))
+    }
+  }
+  
+  componentDidMount = () => {
+    const savedContacts = localStorage.getItem('contacts');
+    this.setState({contacts: JSON.parse(savedContacts)})
+  }
+  
+
   addContact = (name, number) => {
     const newContact = {
       name,
@@ -25,6 +37,8 @@ export class App extends Component {
     this.setState(({ contacts }) => ({
       contacts: [newContact, ...contacts],
     }));
+
+    
   };
 
   isInPhoneBook = newContact => {
