@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { FormContainer, AddButton } from './ContactForm.styled';
-import { Input } from 'components/utils/Utils.styled';
+import { Input } from 'utils/Utils.styled';
 
 export default class ContactForm extends Component {
   state = {

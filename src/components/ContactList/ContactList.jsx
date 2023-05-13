@@ -1,6 +1,6 @@
 import React from 'react';
 import { Contact, Info } from './ContactList.styled';
-import { Button } from 'components/utils/Utils.styled';
+import { Button } from 'utils/Utils.styled';
 import PropTypes from 'prop-types';
 
 function ContactList({ contacts, onClick }) {

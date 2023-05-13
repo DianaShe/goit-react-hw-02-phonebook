@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from 'components/utils/Utils.styled';
+import { Button } from 'utils/Utils.styled';
 
 export const FormContainer = styled.form`
   width: 300px;

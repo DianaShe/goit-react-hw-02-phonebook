@@ -1,5 +1,5 @@
 import { InputField } from './Filter.styled';
-import { Input } from 'components/utils/Utils.styled';
+import { Input } from 'utils/Utils.styled';
 import PropTypes from 'prop-types';
 
 export default function Filter({ value, onChange, onBlur }) {
